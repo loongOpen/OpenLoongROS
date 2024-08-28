@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" textfile="$(find azureloong_description)/urdf/AzureLoong.urdf" />
+  <node name="azureloong_control" pkg="azureloong_control" type="azureloong_ctrl" output="screen"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen" />
+  <node name="rviz" pkg="rviz" type="rviz" output="screen"/>
+</launch>
